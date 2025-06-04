@@ -15,7 +15,3 @@ public abstract class BaseRepository<TEntity> where TEntity : class
         _table = _context.Set<TEntity>();
     }
 }
-
-public class ProfileRepository(DataContext context) : BaseRepository<ProfileEntity>(context), IProfileRepository 
-{
-}

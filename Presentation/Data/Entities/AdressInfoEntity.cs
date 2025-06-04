@@ -15,7 +15,7 @@ public class AdressInfoEntity
     [ForeignKey(nameof(AdressType))]
     public int AdressTypeId { get; set; }
     public AdressTypeEntity AdressType { get; set; } = null!;
-    public string StreetName { get; set; } = null!;
+    public string StreetName { get; set; } = null!; 
     public string? StreetNumber { get; set; }
     public string PostalCode { get; set; } = null!;
     public string City { get; set; } = null!;

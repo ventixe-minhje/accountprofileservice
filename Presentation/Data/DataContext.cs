@@ -5,9 +5,9 @@ namespace Presentation.Data;
 
 public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
 {
-    public DbSet<AdressInfoEntity> AdressInfo { get; set; }
-    public DbSet<AdressTypeEntity> AdressType { get; set; }
-    public DbSet<ContactInfoEntity> ContactInfo { get; set; }
-    public DbSet<ContactTypeEntity> ContactType { get; set; }
     public DbSet<ProfileEntity> Profiles { get; set; }
+    public DbSet<ContactTypeEntity> ContactType { get; set; }
+    public DbSet<ContactInfoEntity> ContactInfos { get; set; }
+    public DbSet<AdressTypeEntity> AdressTypes { get; set; }
+    public DbSet<AdressInfoEntity> AdressInfos { get; set; }
 }
