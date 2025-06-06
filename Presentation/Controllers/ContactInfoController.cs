@@ -16,8 +16,8 @@ public class ContactInfoController(ContactInfoService service) : ControllerBase
     {
         var result = await _service.AddContactInfoAsync(request);
         if (result)
-            return Ok("Kontaktinfo sparad.");
-        return BadRequest("Kunde inte spara kontaktinfo.");
+            return Ok();
+        return BadRequest();
     }
 }
 
